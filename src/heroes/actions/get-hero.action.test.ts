@@ -4,7 +4,7 @@ describe("getHeroAction", () => {
   test("should fetch hero data and return with complete image url", async () => {
     const result = await getHeroAction("clark-kent");
 
-    expect(result.image).toContain("http://localhost:3001/images/");
+    expect(result.image).toContain("http://localhost:3000/images/");
     expect(result).toStrictEqual({
       id: "1",
       name: "Clark Kent",
@@ -25,7 +25,7 @@ describe("getHeroAction", () => {
       speed: 9,
       durability: 10,
       team: "Liga de la Justicia",
-      image: "http://localhost:3001/images/1.jpeg",
+      image: "http://localhost:3000/images/1.jpeg",
       firstAppearance: "1938",
       status: "Active",
       category: "Hero",
